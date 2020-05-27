@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Logog from '../images/logog.png'
+import Logog from '../images/logof.png'
 import axios from 'axios'
 
 export default class Signup extends Component{
@@ -59,12 +59,12 @@ export default class Signup extends Component{
 		            <div className="back">
 			            <form onSubmit={this.handleSubmit}>
 				        <div className="box-input">
-                             <input type="text" name="text" id="username" placeholder="Enter your Name" value={this.state.username} onChange={this.handleChange} required />
+                             <input type="text" name="text" id="username" placeholder="Enter your Full Name" value={this.state.username} onChange={this.handleChange} required />
                              <input type="tel" name="number" id="number" placeholder="Enter your Mobile number" value={this.state.number} onChange={this.handleChange} required/>
 					        <input type="email" name="email" id="email" placeholder="Enter your Email" value={this.state.email} onChange={this.handleChange} required />
-					        <input type="password" name="password" id="password" placeholder="Set your password" value={this.state.password} onChange={this.handleChange} required />
-                            <input type="password" name="password" placeholder="Confirm your password" required />
-					        <button type= "submit">SIGNUP</button>
+					        <input type="password" name="password" id="password" placeholder="Set your Password" value={this.state.password} onChange={this.handleChange} required />
+                            <input type="password" name="password" placeholder="Confirm your Password" required />
+					        <button type= "submit">REGISTER</button>
                     </div>
 			</form>
 		</div>

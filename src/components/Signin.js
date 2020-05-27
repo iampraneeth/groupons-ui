@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
-import Logog from '../images/logog.png'
+import Logog from '../images/logof.png'
 import axios from 'axios'
-
+import { Link } from 'react-router-dom'
 export default class Signin extends Component{
 
+   
 
 	state = {
         email: '',
@@ -51,9 +52,15 @@ export default class Signin extends Component{
 			            <form onSubmit={this.handleSubmit}>
 				        <div className="box-input">
 					        <input type="email" name="email" id="email" placeholder="Enter your Email" value={this.state.email} onChange={this.handleChange} required />
-					<input type="password" name="password" id="password" placeholder="Enter your password" value={this.state.password} onChange={this.handleChange} required />
+					<input type="password" name="password" id="password" placeholder="Enter your Password" value={this.state.password} onChange={this.handleChange} required />
 					<button type="submit">SIGN IN</button>
+                    <div>
+                    <a href="/resetcredentials??"><h3 ><u><i>Forgotten account ?</i></u></h3></a>
+                  
                     </div>
+
+                    </div>
+                   
 			</form>
 		</div>
         </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../images/logog.png'
+import logo from '../images/logof.png'
 import { Link } from 'react-router-dom'
 
 import Cart from '../images/cart.png'
@@ -7,10 +7,15 @@ const Navbar = () => {
    
     return (
         <div className="topnav">
-          
+            <a href="/"> <img src={logo} width="200x" height="29px" /></a>
+           
+            
+         
+            
             <a href="/"><i>Home</i></a>
             
-            <input type="text" placeholder="     Enter your Seach Here       "></input>
+          
+            
            
     
 
