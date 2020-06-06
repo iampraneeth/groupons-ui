@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import Logog from '../images/customer4.png'
+import Logog from '../images/doctor1.png'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
-export default class Signin extends Component{
+export default class DoctorSignin extends Component{
 
    
 
@@ -18,13 +18,13 @@ export default class Signin extends Component{
 	}
 	handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:8181/signin', {
+        axios.post('http://localhost:8187signin/doctor', {
             email: this.state.email,
             password: this.state.password
         }).then((res) => {
             console.log(res);
                             this.props.history.push({
-                                pathname: "/coupons",
+                                pathname: "/doctorui",
                                 state: { data: res.data }
             })
             })
@@ -40,7 +40,7 @@ export default class Signin extends Component{
         return(
 
             <div id="vertical-flip" className="card">
-                   
+                  
 	            <div className="flip">
 		            <div className="front">
 			            <div className="logo" color="red">
@@ -56,7 +56,7 @@ export default class Signin extends Component{
 					<button type="submit">SIGN IN</button>
                     <div>
                     <a href="/resetcredentials??"><h3 ><u><i>Forgotten account ?</i></u></h3></a>
-                    <a href="/doctor/signin"><h3 ><u><i>Access as Doctor</i></u></h3></a>
+                    <a href="/doctor/signup"><h3 ><u><i>Join us !!</i></u></h3></a>
                   
                     </div>
 

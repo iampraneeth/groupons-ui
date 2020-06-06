@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Logog from '../images/logof.png'
+import Logog from '../images/customer4.png'
 import axios from 'axios'
 
 export default class Signup extends Component{
@@ -48,7 +48,7 @@ export default class Signup extends Component{
            
 
             <div id="vertical-flip" className="card">
-                 <h3><b><i>SIGN UP !!!!!</i></b></h3>
+               
 	            <div className="flip">
 		            <div className="front">
 			            <div className="logo" color="red">

@@ -7,7 +7,11 @@ import Signin from './components/Signin';
 import Signup from './components/Signup';
 import Aboutus from './pages/Aboutus';
 import News from './pages/News';
-import Welcome from './components/Welcome'
+import Welcome from './components/Welcome';
+import DoctorSignin from './components/DoctorSignin';
+import DoctorSignUp from './components/DoctorSignUp';
+
+import '../src/pages/Aboutus.css';
 
 function App() {
   return (
@@ -22,10 +26,11 @@ function App() {
                     <Route path="/aboutus" component={Aboutus} />
                     <Route path="/news" component={News} />
                     <Route path="/welcome" component={Welcome} />
+                    <Route path="/doctor/signin" component={DoctorSignin} />\
+                    <Route path="/doctor/signup" component={DoctorSignUp} />\
 
-                    
                 </Switch>
-      <Footer/>
+      
     </div>
     </Router>
   );

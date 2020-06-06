@@ -7,22 +7,12 @@ const Navbar = () => {
    
     return (
         <div className="topnav">
-            <a href="/"> <img src={logo} width="200x" height="29px" /></a>
-           
-            
-         
-            
+            <a href="/"> <img src={logo} width="220x" height="32px" /></a>
             <a href="/"><i>Home</i></a>
-            
-          
-            
-           
-    
-
             <a href="/news"><i>News</i></a>
             <a href="/signin"><i>Signin</i></a>
             <a href="/signup"><i>Signup</i></a>
-            <a href="/about"><i>About</i></a>
+            <a href="/aboutus"><i>About</i></a>
         </div>
     )
 }
