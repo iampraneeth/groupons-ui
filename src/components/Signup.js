@@ -59,7 +59,7 @@ export default class Signup extends Component{
 		            <div className="back">
 			            <form onSubmit={this.handleSubmit}>
 				        <div className="box-input">
-                             <input type="text" name="text" id="username" placeholder="Enter your Full Name" value={this.state.username} onChange={this.handleChange} required />
+                             <input type="name" name="text" id="username" placeholder="Enter your Full Name" value={this.state.username} onChange={this.handleChange} required />
                              <input type="tel" name="number" id="number" placeholder="Enter your Mobile number" value={this.state.number} onChange={this.handleChange} required/>
 					        <input type="email" name="email" id="email" placeholder="Enter your Email" value={this.state.email} onChange={this.handleChange} required />
 					        <input type="password" name="password" id="password" placeholder="Set your Password" value={this.state.password} onChange={this.handleChange} required />

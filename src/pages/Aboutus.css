@@ -8,12 +8,9 @@
     }
     .textfont {
     margin: 0;
-    font-size: 27px;
-    max-width: 120px;
-    line-height: 22px;
-    letter-spacing: 0.3px;
-    padding-bottom: 12px;
-    font-weight: 500;
+    font-size: 22px;
+    margin-top: 70px;
+
     }
     
     .textfont::before {
@@ -26,7 +23,7 @@
     }
     .textfont1 {
     margin: 0;
-    font-size: 20px;
+    font-size: 15px;
     max-width: 80px;
     line-height: 22px;
     letter-spacing: 0.3px;
@@ -43,13 +40,13 @@
     }
     .about-desc {
     margin-top: 30px;
-    color:white;
-    font-size: 16px;
+    color:#f2f2f2f3;
+    font-size: 13px;
     height: 322px;
-    line-height: 1.5;
+    line-height: 2;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: normal;
-    font-style: normal;
+    font-style: italic;
     }
     .go-featuredSection {
     margin-bottom: 72px;

@@ -9,30 +9,23 @@ export default class Aboutus extends Component{
 
         return(
            
-            <div className="about-us-container">
-                <div className="aboutUs-wrapper">
-                    {/* <div class="title">About Us</div> */}
-                    <h3 className="textfont">About Us</h3>
+            <div >
+                    <h3 className="textfont">About On Call Doctor</h3>
                     <div className="about-desc">
                         <p>
-                            Founded in 2010, Deals & Coupons is headquartered in Mumbai with
-                            a tech office in Bengaluru. Deals & Coupons receives about
-<b>
+                            Founded in 2020, On Call Doctor is headquartered in Mumbai with
+                            a tech office in Bengaluru. On Call Doctor receives about
                                  5.2 million monthly visits, lists coupons from 2000+ online
-                                brands
-</b>
-including top stores like Flipkart, Amazon, MakeMyTrip, PayTM
-and BookMyShow, has
-<b>7.5 million email subscribers</b> and
-<b>more than 2 million App downloads</b>. Deals & Coupons has
-grown to become India's largest discount and offer destination.
+                                brands including top stores like Flipkart, Amazon, MakeMyTrip, PayTM and BookMyShow, has
+7.5 million email subscribers and
+more than 2 million App downloads.On Call Doctor has
+grown to become India's largest discount and offer destination with medical appointments with doctors.
 <br />
                         </p>
                         <p>
-                            {" "}
+                          
 At Deals & Coupons, we help you save money through our
-comprehensive listing of coupons, offers, deals and discounts
-from top online brands and websites. You can also earn reliable
+comprehensive listing of coupons, offers, deals and discounts from top online brands and websites. You can also earn reliable
 Cashback on top of the merchant discounts every time you shop
 through us. You can make better shopping decisions through our
 powerful Price Comparison Browser Extension. <br />
@@ -62,10 +55,13 @@ powerful Price Comparison Browser Extension. <br />
                             us. In the end it’s all about helping our users save on
                             everything!
 </p>
+
+
+
                     </div>
-                   
+
+                    <a href="https://github.com/iampraneeth/groupons-microservices" target="_blank"><h3 ><u><i>>Open source Code</i></u></h3></a>
                 </div>
-            </div>
     
                
         )

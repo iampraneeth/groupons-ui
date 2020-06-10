@@ -12,11 +12,12 @@ import DoctorSignin from './components/DoctorSignin';
 import DoctorSignUp from './components/DoctorSignUp';
 
 import '../src/pages/Aboutus.css';
-
+import '../src/components/Navbar.css'
+import '../src/components/Footer.css'
 function App() {
   return (
     <Router>
-    <div className="App">
+    <div>
       
     <Navbar/>
                 <Switch>
@@ -26,11 +27,11 @@ function App() {
                     <Route path="/aboutus" component={Aboutus} />
                     <Route path="/news" component={News} />
                     <Route path="/welcome" component={Welcome} />
-                    <Route path="/doctor/signin" component={DoctorSignin} />\
-                    <Route path="/doctor/signup" component={DoctorSignUp} />\
+                    <Route path="/doctor/signin" component={DoctorSignin} />
+                    <Route path="/doctor/signup" component={DoctorSignUp} />
 
                 </Switch>
-      
+      <Footer/>
     </div>
     </Router>
   );

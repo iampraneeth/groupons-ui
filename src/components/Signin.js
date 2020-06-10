@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import Logog from '../images/customer4.png'
 import axios from 'axios'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import './Signin.css'
 export default class Signin extends Component{
 
    
@@ -24,6 +25,7 @@ export default class Signin extends Component{
         }).then((res) => {
             console.log(res);
                             this.props.history.push({
+                
                                 pathname: "/coupons",
                                 state: { data: res.data }
             })
@@ -38,7 +40,8 @@ export default class Signin extends Component{
     render(){
 
         return(
-
+            <div className="container" style={{ marginTop: '170px', marginBottom: '70px',width:'40%'}}>
+                  <div className="modal-body">
             <div id="vertical-flip" className="card">
                    
 	            <div className="flip">
@@ -64,6 +67,8 @@ export default class Signin extends Component{
                    
 			</form>
 		</div>
+        </div>
+        </div>
         </div>
         </div>
         )
