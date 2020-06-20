@@ -18,7 +18,7 @@ export default class DoctorSignin extends Component{
 	}
 	handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:8187signin/doctor', {
+        axios.post('http://localhost:8187/signin/doctor', {
             email: this.state.email,
             password: this.state.password
         }).then((res) => {
@@ -56,6 +56,7 @@ export default class DoctorSignin extends Component{
 					<button type="submit">SIGN IN</button>
                     <div>
                     <a href="/resetcredentials??"><h3 ><u><i>Forgotten account ?</i></u></h3></a>
+                    <br></br>
                     <a href="/doctor/signup"><h3 ><u><i>Join us !!</i></u></h3></a>
                   
                     </div>

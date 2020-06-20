@@ -3,7 +3,11 @@ import Logog from '../images/customer4.png'
 import axios from 'axios'
 import { Link } from 'react-router-dom';
 import './Signin.css'
+import Footer from './Footer.js'
+
 export default class Signin extends Component{
+
+    
 
    
 
@@ -27,7 +31,7 @@ export default class Signin extends Component{
                             this.props.history.push({
                 
                                 pathname: "/coupons",
-                                state: { data: res.data }
+                                state: { data: res.data },
             })
             })
             .catch((err) => {
@@ -40,7 +44,7 @@ export default class Signin extends Component{
     render(){
 
         return(
-            <div className="container" style={{ marginTop: '170px', marginBottom: '70px',width:'40%'}}>
+            <div className="container1" style={{ marginTop: '170px', marginBottom: '70px',width:'40%'}}>
                   <div className="modal-body">
             <div id="vertical-flip" className="card">
                    
@@ -59,6 +63,7 @@ export default class Signin extends Component{
 					<button type="submit">SIGN IN</button>
                     <div>
                     <a href="/resetcredentials??"><h3 ><u><i>Forgotten account ?</i></u></h3></a>
+                    <br/>
                     <a href="/doctor/signin"><h3 ><u><i>Access as Doctor</i></u></h3></a>
                   
                     </div>
@@ -70,6 +75,7 @@ export default class Signin extends Component{
         </div>
         </div>
         </div>
+
         </div>
         )
     }

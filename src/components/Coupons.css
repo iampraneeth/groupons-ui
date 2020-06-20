@@ -1,0 +1,75 @@
+.column {
+    float: left;
+    width: 25%;
+    padding: 30px;
+    padding-left: 60px;
+    padding-bottom: 1px;
+  }
+  
+  /* Style the images inside the grid */
+  .column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+  }
+  .imgsize{
+      height: 200px;
+      width: 500px;
+  }
+  
+  .column img:hover {
+    opacity: 1;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    display: table;
+    clear: both;
+  }
+  
+  /* The expanding image container */
+  .container {
+    position: relative;
+    display: none;
+  }
+  
+  /* Expanding image text */
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Closable button inside the expanded image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
+
+
+.zoom {
+    padding: 20px;
+    transition: transform .2s;
+    width: 400px;
+    height: 370px;
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    -ms-transform: scale(0.5); /* IE 9 */
+    -webkit-transform: scale(10.5); /* Safari 3-8 */
+    transform: scale(1.1); 
+  }
+  h5{
+      color: rgb(216, 212, 212);
+      font-style: italic;
+  }
+  h3{
+      color:rgb(104, 104, 104);
+      
+  }

@@ -1,0 +1,55 @@
+.imgdisplay{
+    height: 320px;
+    width: 900px;
+    padding-top: 50px;
+    padding-left: 90px;
+    float: left;
+}
+
+.zooming {
+    padding: 20px;
+    transition: transform .2s;
+    width: 650px;
+    height: 200px;
+    margin: 0 auto;
+    float: left;
+  }
+  
+  .zooming:hover {
+    -ms-transform: scale(0.1); /* IE 9 */
+    -webkit-transform: scale(10.5); /* Safari 3-8 */
+    transform: scale(1.2); 
+  }
+
+  .coupondesc{
+   font-style: italic;
+    padding-top: inherit;
+    padding-left: 90px;
+    float: left;
+
+  }
+
+  .zoomingbutton {
+    padding: 20px;
+    transition: transform .2s;
+    width: 450px;
+    height: 350px;
+    margin: 0 auto;
+    float: inherit;
+  }
+  .exbutton {
+    background-color:inherit;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-top: 80px;
+    font-style: italic;
+  }
+  
+ 
