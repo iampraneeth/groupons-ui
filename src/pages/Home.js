@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
-import Logog from '../images/doctor1.png'
 import Footer from '../components/Footer.js'
+import Logog from '../images/doctorbg3.jpg'
+
+
 export default class Home extends Component{
 
     render(){
@@ -8,21 +10,16 @@ export default class Home extends Component{
         return(
            
                 <div>
-                    <br>
-                    </br>
+                    <h2><i>
+                       Welcome to On-Call-Doctor
+                       </i></h2>
                     <br/>
-                    <br/>
-                    <br/>
-                    <br/>
+                   
 
-                    <h2>
-                        <b>
-                        <i>
-                        WELCOME TO ON CALL DOCTOR 
+                <img src={Logog} width="1400px" height="450px"/>
 
-                        </i>
-                        </b>
-                    </h2>
+                  
+
 
                 </div>
         )

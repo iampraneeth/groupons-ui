@@ -19,12 +19,17 @@ import Offer from './components/Offer';
 import Payment from './components/Payment';
 import Home from './pages/Home';
 import DoctorList from './components/DoctorList';
+import MyPayments from './components/MyPayments';
+import MyWhishlist from './components/MyWhishlist';
+import Admin from './components/Admin';
+import AdminDoctorList from './components/AdminDoctorList';
+import AdminCustomerList from './components/AdminCustomerList';
 
 function App() {
   return (
     <div>
           
-          <Navbar/>
+          <Navbar />
 
     
                 <Router>
@@ -41,6 +46,11 @@ function App() {
                     <Route path ="/offer" component={Offer}/>
                     <Route path="/payment" component={Payment}/>
                     <Route path="/list/doctors" component={DoctorList}/>
+                    <Route path="/my/payments" component={MyPayments}/>
+                    <Route path="/my/whishlist" component={MyWhishlist}/>
+                    <Route path="/admin" component={Admin}/>
+                    <Route path="/doctor/list/admin" component={AdminDoctorList}/>
+                    <Route path="/customer/list/admin" component={AdminCustomerList}/>
 
                 </Switch> 
                 </Router>

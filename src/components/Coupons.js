@@ -60,7 +60,8 @@ class Coupons extends Component {
          
 
 
-        
+          <Footer/>
+
           </div>
           
             

@@ -78,7 +78,7 @@ export default class DoctorSignUp extends Component{
                              <input type="tel" name="number" id="number" placeholder="Enter your Mobile number" value={this.state.number} onChange={this.handleChange} required/>
 
 					       
-					        <button type= "submit">REGISTER</button>
+					        <button  className="buttonpress" type= "submit">REGISTER</button>
                     </div>
 			</form>
 		</div>

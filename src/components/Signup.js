@@ -64,7 +64,7 @@ export default class Signup extends Component{
 					        <input type="email" name="email" id="email" placeholder="Enter your Email" value={this.state.email} onChange={this.handleChange} required />
 					        <input type="password" name="password" id="password" placeholder="Set your Password" value={this.state.password} onChange={this.handleChange} required />
                             <input type="password" name="password" placeholder="Confirm your Password" required />
-					        <button type= "submit">REGISTER</button>
+					        <button className="buttonpress" type= "submit">REGISTER</button>
                     </div>
 			</form>
 		</div>

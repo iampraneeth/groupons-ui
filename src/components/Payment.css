@@ -60,41 +60,29 @@
     border-radius: 3px;
   }
   
-  input[type=text] {
-    width: 50%;
+  
+.inputpayment{
+
+     width: 50%;
     margin-bottom: 20px;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 3px;
     float: left;
+
   }
 
-  input[type=number2] {
-    width: 50%;
-    margin-bottom: 20px;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    float: left;
-  }
-  input[type=text1] {
+  .cardpayment{
+
     width: 50%;
     margin-bottom: 20px;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 3px;
     padding-right: 40px; 
-     
-}
 
-input[type=number1] {
-    width: 50%;
-    margin-bottom: 20px;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    padding-right: 40px;  
-}
+
+  }
 
 
   

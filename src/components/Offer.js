@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import myntra from '../images/myntra.jpg'
 import './Offer.css'
+import axios from 'axios';
 
 var randomToken = require('random-token').create('COUPONONCALLDOCTOR0123456789');
 var token = randomToken(8);
@@ -8,44 +9,52 @@ var token = randomToken(8);
 var couponcode=token;
 
 export default class Offer extends Component{
-    constructor(){
-        super()
 
-        this.state={
+ state={
 
-                whislist:"Add to Whishlist",
-                coupontext:"Use the below coupon code"
-                               
-        }
-    }
+        whishlist:"Add to whishlist",
+        coupontext:"Use the below coupon code",
+        couponName:"Myntra",
+        couponid:couponcode,
+        couponDescription:"Big discounts on the latest styles and trends for men, women and kids. Rs.500 Off on First Purchase + Free delivery on all orders for 1 month. 30 Days Return. COD available. 3000+ Brands. 7 Lakh + Styles. Types: Shoes, T-Shirts, Dresses, Party Wear, Casual Wear",
+        couponRate:"1$"
+                       
+}
 
-    checking(){
-
-        if(this.state="Add to Whishlist"){
-          
-          this.addToWhishlist()
-        }
-        else{
-          this.removeFromWhishlist()
-        }
-    }
     
-    addToWhishlist(){
 
-       
 
-        this.setState({
-            
-            whislist:"Remove From Whishlist"
-            
-        })
-        this.state="Remove From Whishlist";
-    }
 
-removeFromWhishlist(){
-    this.setState({
-        whislist:"Add to Whishlist"
+handleSubmit=(e)=>{
+
+this.setState({
+    whishlist:"Added to Whishlist"
+})
+alert("Your Coupon  has been added to whishlist"+this.state.couponid)
+
+    axios.post('http://localhost:8181/addwhishlist', 
+    
+    {
+   
+        couponId: this.state.couponid,
+        couponName: this.state.couponName,
+        couponDescription: this.state.couponDescription,
+        couponRate: this.state.couponRate
+    
+        
     })
+        .then((res) => {
+            console.log(res);
+            alert(res)
+                this.props.history.push({
+                    pathname: "/signin",
+
+})
+        })
+        .catch((err) => {
+            alert("catch")
+            console.log(err);
+        })
 }
 
 
@@ -57,25 +66,30 @@ removeFromWhishlist(){
 
         return(
             <div>
+                
             <div className="zooming">
                 <img className="imgdisplay" src={myntra} alt="Avatar"/>
                 <br>
                 </br>
                 <div className="coupondesc">
                <h5>
-               Big discounts on the latest styles and trends for men, women and kids. Rs.500 Off on First Purchase + Free delivery on all orders for 1 month. 30 Days Return. COD available. 3000+ Brands. 7 Lakh + Styles. Types: Shoes, T-Shirts, Dresses, Party Wear, Casual Wear.
+             {this.state.couponDescription}
                </h5>
                </div>
                 </div>
                
             <div className="exbutton">
             <h3><b>{this.state.coupontext}</b></h3><br/>
-        <h2><i>{couponcode}</i></h2>
+        <h2><b>{couponcode}</b></h2>
            
+        <form onSubmit={this.handleSubmit}>
+        <button  className="buttonpress" width="40px" ><i>{this.state.whishlist}</i></button><br></br>
+        </form>
+        <a href="https://www.myntra.com/" target="_blank"><button  className="buttonpress" type="submit" ><i>Go to Website</i></button></a>
+            
 
-        <button className="whishlistbutton" width="40px" onClick={()=>this.checking()}><i>{this.state.whislist}</i></button><br></br>
-        <a href="https://www.myntra.com/" target="_blank"><button type="submit" ><i>Go to Website</i></button></a>
-      
+
+
             </div>
             </div>
            

@@ -4,10 +4,13 @@ import axios from 'axios'
 import { Link } from 'react-router-dom';
 import './Signin.css'
 import Footer from './Footer.js'
+import Navbar from './Navbar.js'
 
 export default class Signin extends Component{
 
-    
+    constructor(props){
+        super(props);
+    }
 
    
 
@@ -57,17 +60,18 @@ export default class Signin extends Component{
 
 		            <div className="back">
 			            <form onSubmit={this.handleSubmit}>
+                           
 				        <div className="box-input">
-					        <input type="email" name="email" id="email" placeholder="Enter your Email" value={this.state.email} onChange={this.handleChange} required />
-					<input type="password" name="password" id="password" placeholder="Enter your Password" value={this.state.password} onChange={this.handleChange} required />
-					<button type="submit">SIGN IN</button>
+					       
+                         <input type="email" name="email" id="email" placeholder="Enter your Email" value={this.state.email} onChange={this.handleChange} required />
+                    <input type="password" name="password" id="password" placeholder="Enter your Password" value={this.state.password} onChange={this.handleChange} required />
+					<button className="buttonpress" type="submit">SIGN IN</button>
                     <div>
                     <a href="/resetcredentials??"><h3 ><u><i>Forgotten account ?</i></u></h3></a>
                     <br/>
                     <a href="/doctor/signin"><h3 ><u><i>Access as Doctor</i></u></h3></a>
                   
                     </div>
-
                     </div>
                    
 			</form>
@@ -75,7 +79,7 @@ export default class Signin extends Component{
         </div>
         </div>
         </div>
-
+            <Footer/>
         </div>
         )
     }

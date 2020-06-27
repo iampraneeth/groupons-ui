@@ -53,7 +53,7 @@ export default class DoctorSignin extends Component{
 				        <div className="box-input">
 					        <input type="email" name="email" id="email" placeholder="Enter your Email" value={this.state.email} onChange={this.handleChange} required />
 					<input type="password" name="password" id="password" placeholder="Enter your Password" value={this.state.password} onChange={this.handleChange} required />
-					<button type="submit">SIGN IN</button>
+					<button className="buttonpress" type="submit">SIGN IN</button>
                     <div>
                     <a href="/resetcredentials??"><h3 ><u><i>Forgotten account ?</i></u></h3></a>
                     <br></br>
